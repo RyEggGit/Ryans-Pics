@@ -1,0 +1,70 @@
+:root{
+    --height: 60px;
+}
+
+.navbar {
+    background: #ffff;
+    height: var(--height);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Trebuchet MS';
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height);
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    color: #383838;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .fa-wind {
+    margin-left: 0.2rem;
+    font-size: 1.8rem;
+    color:palegreen;
+  }
+  
+  .navbar-checkout{
+    color: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    
+
+    width: 20px;
+    margin-right: 15px;
+    
+    text-decoration: none;
+    caret-color: transparent;
+    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navbar-checkout:hover{
+    border-bottom: 4px solid #cf3434;
+    transition: all 0.2s ease-out;
+  }
+
+  
+
+  
