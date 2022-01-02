@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button.js';
 
 function CardItem(props) {
   return (
@@ -13,8 +14,16 @@ function CardItem(props) {
               src={props.src}
             />
           </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+
+          <div class="splitscreen">
+            <div className='cards__item__info'>
+              <h5 className='cards__item__text'>{props.text}</h5>
+            </div>
+            <div className='add-to-bag'>
+              <Button className='btn' buttonStyle='btn--add-to-bag' buttonSize='btn--small'>
+                Add to Bag
+              </Button>
+            </div>
           </div>
         </Link>
       </li>

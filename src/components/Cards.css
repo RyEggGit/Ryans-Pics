@@ -95,10 +95,23 @@
   .cards__item__img:hover {
     transform: scale(1.1);
   }
+
+  .splitscreen {
+    display:flex;
+}
+.splitscreen .cards__item__info {
   
-  .cards__item__info {
-    padding: 20px 30px 30px;
-  }
+    flex: 3;
+    padding-left: 40px;
+    padding-right: 5px;
+}
+.splitscreen .add-to-bag {
+    flex: 1;
+    padding-top: 40px;
+    
+    
+}
+
   
   .cards__item__text {
     color: #252e48;

@@ -42,3 +42,14 @@
     transform: all 0.3s ease-out;
     font-weight:400;
 }
+
+.btn--small{
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.btn--add-to-bag{
+    color: #fff;
+    background-color: #1f98f4;
+    float: left;
+}
