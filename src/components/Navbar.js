@@ -9,10 +9,10 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className= "navbar-logo">
-                        Artsy Fartsy <i class="fas fa-wind"></i>
+                        Artsy Fartsy <i className="fas fa-wind"></i>
                     </Link>
                     <Link to='/checkout' className = 'navbar-checkout'>
-                        <i class="fas fa-shopping-cart"></i>
+                        <i className="fas fa-shopping-cart"></i>
                     </Link>
                     
                 </div>

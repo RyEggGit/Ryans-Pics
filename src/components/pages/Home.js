@@ -1,16 +1,18 @@
 import '../../App.css';
 import HeroSection from '../HeroSection.js';
-import React from 'react';
-import Cards from '../CardsWeekly.js';
+import React, {useState} from 'react';
+import Cards from '../cards/CardsWeekly.js';
 import Navbar from '../Navbar.js';
 import Footer from '../Footer.js';
+import Expand from '../cards/Expand'
 
-function Home(){
+function Home(props){
+    let {setArtwork} = props;
     return (
         <>
             <Navbar/>
-            <HeroSection/>
-            <Cards/>
+            <HeroSection />
+            <Cards setArtwork={setArtwork} />
             <Footer/>   
         </>
     );

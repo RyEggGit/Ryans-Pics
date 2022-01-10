@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    background: #ffff;
+    background: rgb(255, 255, 255);
     height: var(--height);
     display: flex;
     justify-content: start;
@@ -51,17 +51,18 @@
 
     width: 20px;
     margin-right: 15px;
+    margin-top: 5px;
     
     text-decoration: none;
     caret-color: transparent;
     
-    height: 100%;
+    height: 94%;
     position: absolute;
     top: 0;
     right: 0;
   }
   .navbar-checkout:hover{
-    border-bottom: 4px solid #cf3434;
+    border-bottom: 4px solid #414141;
     transition: all 0.2s ease-out;
   }
 

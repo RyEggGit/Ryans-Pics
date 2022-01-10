@@ -1,0 +1,21 @@
+[
+    {
+        "src": "images/img-1.jpg",
+        "name": "Artwork1",
+        "artist":"Ryan",
+        "price": "150"
+        
+    },
+    {
+        "src": "images/img-2.jpg",
+        "name": "Artwork2",
+        "artist":"Bob",
+        "price": "200"
+    },
+    {
+        "src": "images/img-3.jpg",
+        "name": "Artwork3",
+        "artist":"Jim",
+        "price": "40"
+    }
+]
