@@ -1,9 +1,7 @@
-import React, {useState} from 'react'
-import Navbar from '../Navbar';
+import React from 'react'
+import Navbar from '../helperComponents/Navbar';
 import BuyItem from '../checkout/BuyItem';
-import Footer from '../Footer';
-import { artwork } from '../helperComponents/artwork'
-import { useEffect } from 'react/cjs/react.development';
+import Footer from '../helperComponents/Footer';
 
 
 
@@ -12,9 +10,9 @@ const Checkout = (props) => {
     
     return (
         <>
-        <Navbar/>
-        <BuyItem list = {list} setList = {setList}/>
-        <Footer/>
+            <Navbar/>
+            <BuyItem list = {list} setList = {setList}/>
+            <Footer/>
         </>
     )
 }

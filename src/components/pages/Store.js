@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import AllCards from '../cards/AllCards'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import Navbar from '../helperComponents/Navbar'
+import Footer from '../helperComponents/Footer'
 import Expand from '../cards/Expand'
-import {artwork} from '../helperComponents/artwork.js'
 
 
 const Store = (props) => {
-    let {selectedArtwork, setArtwork,addItem, err} = props
+    let {selectedArtwork, setArtwork,addItem, err, artworkList} = props
     return (
         <>
             <Navbar />
-            <AllCards setArtwork={setArtwork} />
+            <AllCards setArtwork={setArtwork} artworkList = {artworkList}/>
             <Footer />
             <Expand selectedArtwork={selectedArtwork} setArtwork={setArtwork} addItem = { addItem} err= {err} />
             

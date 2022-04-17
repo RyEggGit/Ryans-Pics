@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
-import Button from '../Button'
+import React from 'react'
+import Button from '../helperComponents/Button'
 import './Item.css'
-
-import { artwork } from '../helperComponents/artwork'
 import { Link } from 'react-router-dom'
+import {setImg}from '../helperComponents/artwork'
 
 const Item = (props) => {
 
@@ -11,9 +10,11 @@ const Item = (props) => {
     const ItemsInBag = () => {
         return (
             list.map((value, index) => {
+
+                setImg(value.getSrc(), value.getName())
                 return (
                     <div key={index} className='item'>
-                        <img src={value.getSrc()} />
+                        <img src={value.getSrc()} id = {value.getName()}/>
                         <div className='description'>
                             <p>{value.getName()}</p>
                             <p>Artist: {value.getArtist()}</p>

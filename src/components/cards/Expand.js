@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion';
 import './Expand.css'
-import Button from '../Button';
-import { artwork } from '../helperComponents/artwork';
+import Button from '../helperComponents/Button';
+import { setImg } from '../helperComponents/artwork';
+
 
 const Expand = (props) => {
   
@@ -10,7 +10,7 @@ const Expand = (props) => {
   const [index, setIndex] = useState(-1)
 
   useEffect(() => {
-    if (selectedArtwork.getName() != err.getName() ) {
+    if (selectedArtwork.getName() !== err.getName() ) {
       setIndex(1);
     }
   }, [selectedArtwork])
@@ -21,15 +21,12 @@ const Expand = (props) => {
       setIndex(-2);
       console.log("Artwork " + selectedArtwork.getName() + "\t Index: " + index)
     }
-    else {
-      //console.log("clicked image")
-    }
   }
-
+  setImg(selectedArtwork.getSrc(),selectedArtwork.getName() +"-expand" )
   return (
     <div className='backdrop' onClick={handleClick} style={{ zIndex: index }}>
       <div className="splitscreen">
-        <img className="image" src={selectedArtwork.getSrc()} alt="englarged Image" />
+        <img className="image" src={selectedArtwork.getSrc()} id = {selectedArtwork.getName() +"-expand"} alt="englarged Image" />
         <div className='description'>
           <h1>{selectedArtwork.getName()}</h1>
           <p>{selectedArtwork.getArtist()}</p>
@@ -37,8 +34,6 @@ const Expand = (props) => {
           <Button className="add-to-bag" buttonSize={"btn--large"} buttonStyle={"btn--add-to-bag"} click={() => addItem(selectedArtwork)}>Add to bag</Button>
         </div>
       </div>
-
-
     </div>
   )
 }

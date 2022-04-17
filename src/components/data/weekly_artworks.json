@@ -1,0 +1,21 @@
+[
+    {
+        "src": "grizzly.jpg",
+        "name": "Grizzly Bear",
+        "artist":"Pablo Picasso",
+        "price": "170"
+        
+    },
+    {
+        "src": "bird.jpg",
+        "name": "Cool Bird",
+        "artist":"Vincent van Gogh",
+        "price": "250"
+    },
+    {
+        "src": "squirel.jpg",
+        "name": "Squirel",
+        "artist":"Michelangelo",
+        "price": "40"
+    }
+]

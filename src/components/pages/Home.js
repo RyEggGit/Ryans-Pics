@@ -1,18 +1,19 @@
 import '../../App.css';
-import HeroSection from '../HeroSection.js';
-import React, {useState} from 'react';
+import HeroSection from '../helperComponents/HeroSection.js';
+import React from 'react';
 import Cards from '../cards/CardsWeekly.js';
-import Navbar from '../Navbar.js';
-import Footer from '../Footer.js';
-import Expand from '../cards/Expand'
+import Navbar from '../helperComponents/Navbar.js';
+import Footer from '../helperComponents/Footer.js';
 
 function Home(props){
-    let {setArtwork} = props;
+    let {setArtwork , artworkList} = props;
+
+
     return (
         <>
             <Navbar/>
             <HeroSection />
-            <Cards setArtwork={setArtwork} />
+            <Cards setArtwork={setArtwork} artworkList =  {artworkList}/>
             <Footer/>   
         </>
     );

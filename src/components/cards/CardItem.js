@@ -1,27 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../Button.js';
 
-import { artwork } from '../helperComponents/artwork';
+import { setImg } from '../helperComponents/artwork';
 
 function CardItem(props) {
-  let { setImage, click, art} = props
+  let { click, art, drawPrice} = props
+  
   return (
-    <>      
-      <li className='cards__item' onClick={click}>
+    <>
+      <ol className='cards__item' onClick={click}>
         <div className='cards__item__link'>
           <figure className='cards__item__pic-wrap' data-category={art.getPriceString()}  >
             <img
               className='cards__item__img'
               alt='Travel Image'
               src={art.getSrc()}
+              id={art.getName()}
             />
+            <div className='price' style={drawPrice?{}:{display:"none"}}>
+              {art.getPriceString()}
+            </div>
           </figure>
+
           <div className='cards__item__info'>
             <h5 className='cards__item__text'>{art.getName()}</h5>
           </div>
         </div>
-      </li>
+      </ol>
     </>
   );
 }

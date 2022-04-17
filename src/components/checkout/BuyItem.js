@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { artwork } from '../helperComponents/artwork'
 import './BuyItem.css'
 import Items from './Item';
 import Buy from './Buy'
-import Button from '../Button';
+import Button from '../helperComponents/Button';
 
 
 function BuyItem(props) {
@@ -22,7 +21,7 @@ function BuyItem(props) {
     const [empty, setEmpty] = useState(false);
 
     useEffect(() => {
-        if (list.length == 0) {
+        if (list.length === 0) {
             setEmpty(true);
         }
         else {
@@ -33,6 +32,7 @@ function BuyItem(props) {
 
     const[total, setTotal] = useState(0)
 
+        
     return (
         <div>
             <h1>Arsty Fartsy <i className="fas fa-wind"></i></h1>

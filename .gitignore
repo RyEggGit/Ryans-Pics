@@ -8,8 +8,7 @@
 # testing
 /coverage
 
-#firebase fodler
-/firebase
+/src/firebase
 
 # production
 /build

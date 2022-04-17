@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react/cjs/react.development';
-import {validEmail} from './helperComponents/email'
+import {validEmail} from './email'
 
 
 function Footer() {
@@ -11,7 +10,7 @@ function Footer() {
 
     const clickHandler = () =>{
         //console.log(email)
-        if(validEmail({email}) == true){
+        if(validEmail({email}) === true){
             console.log('valid email')
         }
         else{
