@@ -24,7 +24,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the Artsy Fartsy newsletter to receive updates on art work before there for sale
+                    Join the Ryan Pics newsletter to receive updates on what Ryan will take picutres of next
                 </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time.
@@ -45,17 +45,17 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            Artsy Fartsy
-                            <i className='fas fa-wind'/>
+                            Ryan's Pics
+                            <i class="fas fa-camera"></i>
                         </Link>
                     </div>
-                    <small className='website-rights'>Artsy Fartsy ©2021</small>
+                    <small className='website-rights'>Ryan's Pics ©2022</small>
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link facebook'
                             to='/'
                             target='_blank'
-                            aria-label='Facebook'
+                            aria-label='Facebook' 
                         >
                             <i className='fab fa-facebook-f' />
                         </Link>

@@ -131,6 +131,9 @@
     align-items: center;
     margin-bottom: 16px;
   }
+  .social-logo .fa-camera{
+    color: #fff;
+  }
   
   .website-rights {
     color: #fff;

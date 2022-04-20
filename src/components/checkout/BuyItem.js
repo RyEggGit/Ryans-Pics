@@ -35,7 +35,7 @@ function BuyItem(props) {
         
     return (
         <div>
-            <h1>Arsty Fartsy <i className="fas fa-wind"></i></h1>
+            <h1>Checkout </h1>
             <div className='splitscreen'>
                 <div className='items-in-bag-grid' >
                     <Items list={list} removeIndex={removeIndex} empty={empty} />

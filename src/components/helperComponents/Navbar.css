@@ -35,10 +35,11 @@
     align-items: center;
   }
   
-  .fa-wind {
-    margin-left: 0.2rem;
+  .fa-camera {
+    margin-left: 0.8rem;
+    margin-top: 0.3rem;
     font-size: 1.8rem;
-    color:palegreen;
+    color:rgb(0, 0, 0);
   }
   
   .navbar-checkout{

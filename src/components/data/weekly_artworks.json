@@ -1,20 +1,20 @@
 [
     {
-        "src": "grizzly.jpg",
-        "name": "Grizzly Bear",
+        "src": "img-1.JPG",
+        "name": "Fence With Grass",
         "artist":"Pablo Picasso",
         "price": "170"
         
     },
     {
-        "src": "bird.jpg",
-        "name": "Cool Bird",
+        "src": "img-2.JPG",
+        "name": "Arkle Sign",
         "artist":"Vincent van Gogh",
         "price": "250"
     },
     {
-        "src": "squirel.jpg",
-        "name": "Squirel",
+        "src": "img-3.JPG",
+        "name": "Dark to Light Forest Transition",
         "artist":"Michelangelo",
         "price": "40"
     }

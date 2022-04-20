@@ -9,7 +9,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className= "navbar-logo">
-                        Artsy Fartsy <i className="fas fa-wind"></i>
+                        Ryan's Pics <i class="fas fa-camera"></i>
                     </Link>
                     <Link to='/checkout' className = 'navbar-checkout'>
                         <i className="fas fa-shopping-cart"></i>

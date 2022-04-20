@@ -9,7 +9,7 @@ const Cards = (props) => {
     console.log(artworkList)
     return (
         < div className='cards' >
-            <h1>Artsy Fartsy <i className="fas fa-wind"></i></h1>
+            <h1>Store</h1>
             <div className="cards__container">
                 <DrawCards artworkList={artworkList.slice(0,3)} setArtwork={setArtwork} drawPrice = {true}/>
             </div>
