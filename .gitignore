@@ -11,6 +11,8 @@
 /src/components/firebase/
 /.firebase
 /.github
+.env
+
 
 fierbase
 # production

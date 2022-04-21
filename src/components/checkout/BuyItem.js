@@ -35,7 +35,7 @@ function BuyItem(props) {
         
     return (
         <div>
-            <h1>Checkout </h1>
+            <h1>Checkout</h1>
             <div className='splitscreen'>
                 <div className='items-in-bag-grid' >
                     <Items list={list} removeIndex={removeIndex} empty={empty} />
@@ -69,3 +69,4 @@ function BuyItem(props) {
 }
 
 export default BuyItem
+

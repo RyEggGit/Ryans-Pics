@@ -1,12 +1,10 @@
-import React from 'react'
-import { useEffect } from 'react/cjs/react.development'
-
+import React, { useEffect }  from 'react'
+import { artwork } from '../helperComponents/artwork'
 const Buy = (props) => {
     let { list, setTotal } = props
     var tot = 0
 
     useEffect(() => {
-        console.log(tot)
         setTotal(tot)
     })
 

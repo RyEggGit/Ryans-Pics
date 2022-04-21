@@ -11,10 +11,10 @@ const Item = (props) => {
         return (
             list.map((value, index) => {
 
-                setImg(value.getSrc(), value.getName())
+                
                 return (
                     <div key={index} className='item'>
-                        <img src={value.getSrc()} id = {value.getName()}/>
+                        <img src={setImg(value.getSrc(), value.getName())} id = {value.getName()}/>
                         <div className='description'>
                             <p>{value.getName()}</p>
                             <p>Artist: {value.getArtist()}</p>
