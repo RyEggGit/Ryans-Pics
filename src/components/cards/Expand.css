@@ -1,39 +1,32 @@
-
-.backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    
-  }
-  
-
-  .backdrop .splitscreen {
-    display:flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    margin: 120px 60px;
-    box-shadow: 3px 5px 7px rgba(255, 255, 255, 0.5);
-    border: 3px solid white;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-  .backdrop .splitscreen .image{
-    flex: 1;
-    max-width: 60%;
-    max-height: 80%;
-    
-  }
-  .backdrop .splitscreen .description{
-    flex: 1;
-    padding: 10px;
-    color:rgb(54, 54, 54);
-    font-size: 100%;
-    
-  }
-  
-  .backdrop .splitscreen .description .add-to-bag{
-    display: flex;
-    justify-content: center;
-   
-  }
+.backdrop .splitscreen {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin: 120px 60px;
+  box-shadow: 3px 5px 7px rgba(255, 255, 255, 0.5);
+  border: 3px solid white;
+}
+.backdrop .splitscreen .image {
+  flex: 1;
+  max-width: 60%;
+  max-height: 80%;
+}
+.backdrop .splitscreen .description {
+  flex: 1;
+  padding: 10px;
+  color: rgb(54, 54, 54);
+  font-size: 100%;
+}
+
+.backdrop .splitscreen .description .add-to-bag {
+  display: flex;
+  justify-content: center;
+}

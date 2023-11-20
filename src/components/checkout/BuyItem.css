@@ -1,48 +1,42 @@
 .splitscreen {
-    display: flex;
-    margin: 4rem 6rem;
-    
-    
+  display: flex;
+  margin: 4rem 6rem;
 }
 
-.splitscreen .items-in-bag-grid{
-    flex: 2;
-    min-height:390px;
-
+.splitscreen .items-in-bag-grid {
+  flex: 2;
+  min-height: 390px;
 }
 
-.splitscreen .checkout{
-    flex: 1;
+.splitscreen .checkout {
+  flex: 1;
 
-    /* Draw Borders */
-    border-radius: 10px;
-    max-height: 390px;
-    margin-left: 10px;
-    padding: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(19, 102, 255, 0.017));
-
+  /* Draw Borders */
+  border-radius: 10px;
+  max-height: 390px;
+  margin-left: 10px;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(19, 102, 255, 0.017));
 }
 
-.splitscreen .checkout .splitcheckout{
-    display:flex;
-    
+.splitscreen .checkout .splitcheckout {
+  display: flex;
 }
 
-.splitscreen .checkout .splitcheckout .name{
-    flex:1;
+.splitscreen .checkout .splitcheckout .name {
+  flex: 1;
 }
 
-.splitscreen .checkout .splitcheckout .name > p{
-    font-size: 14px;
-    font-weight: 400;
+.splitscreen .checkout .splitcheckout .name > p {
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.splitscreen .checkout .splitcheckout .price{
-    flex:1;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    
+.splitscreen .checkout .splitcheckout .price {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
