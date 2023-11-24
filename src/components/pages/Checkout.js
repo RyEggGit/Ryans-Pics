@@ -1,21 +1,18 @@
-import React from 'react'
-import Navbar from '../helperComponents/Navbar';
-import BuyItem from '../checkout/BuyItem';
-import Footer from '../helperComponents/Footer';
-
-
+import React from "react";
+import Navbar from "../helperComponents/Navbar";
+import BuyItem from "../checkout/BuyItem";
+import Footer from "../helperComponents/Footer";
 
 const Checkout = (props) => {
-    let {list, setList} = props;
-    
-    return (
-        <>
-            <Navbar/>
-            <BuyItem list = {list} setList = {setList}/>
-            <Footer/>
-        </>
-    )
-}
+  let { list, setList } = props;
 
-export default Checkout
+  return (
+    <>
+      <Navbar />
+      <BuyItem list={list} setList={setList} />
+      <Footer />
+    </>
+  );
+};
 
+export default Checkout;

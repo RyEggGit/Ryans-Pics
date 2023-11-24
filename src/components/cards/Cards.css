@@ -1,130 +1,126 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .cards {
-    padding: 4rem 0 ;
-    background: #fff;
-    width: 100%;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  
-  .cards__container {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-  }
-  
-  .cards__wrapper {
-    display:flex;
-    width:100%
-  }
-  
-  .cards__items {
-    margin-bottom: 24px;
-    width: 100%;
-    margin:10px;
-  }
-  
-  .cards__item {
-    padding: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    min-width: 100%;
-  }
-  
-  .cards__item__link {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    border-radius: 10px;
-    text-decoration: none;
-    --c:12px
-  }
-  /*
+  padding: 4rem 0;
+  background: #fff;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.cards__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+  width: 100%;
+  margin: 10px;
+}
+
+.cards__item {
+  padding: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  min-width: 100%;
+}
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  text-decoration: none;
+  --c: 12px;
+}
+/*
   .cards__item__link:hover {
     --c:14px;
   }
   */
-  
-  
-  .cards__item__pic-wrap {
-    position: relative;
-    padding: 10rem;
-    margin:0px;
-    overflow: hidden;
-    size: 0;
-  }
-  
-  .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  }
 
-  
-  .cards__item__img {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    display: block;
-    width: 95%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.2s linear;
-    filter: brightness(70%);
-    
+.cards__item__pic-wrap {
+  position: relative;
+  padding: 10rem;
+  margin: 0px;
+  overflow: hidden;
+  size: 0;
+}
 
-  }
-  
-  .cards__item__img:hover {
-    transform: scale(1.1);
-  }
-  
-  .cards__item__text {
-    color: #252e48;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Mulish', sans-serif;
-  }
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
 
-  @media only screen and (min-width: 1200px) {
-    .content__blog__container {
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .cards__items {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .cards__item {
-      margin-bottom: 2rem;
-    }
-  }
-
-  .unlink{
-    text-decoration: none;
-    display:flex;
-    width:100%;
-  }
-
-  .cards__container .price{
+.cards__item__img {
   position: absolute;
-  left:1rem;
-  bottom:0.2rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: block;
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+  filter: brightness(70%);
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
+
+.unlink {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
+.cards__container .price {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.2rem;
   border-radius: 7px;
-  padding:5px;
-  font-size:20px;
-  background-color:#1f98f4;
-  color:#ffffff;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #1f98f4;
+  color: #ffffff;
 }
